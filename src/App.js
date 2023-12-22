@@ -1,6 +1,6 @@
 import "./App.css";
 
-import React, { useState, useEffect } from "react";
+
 import {Route, Routes } from "react-router-dom";
 
 import Home from './Components/Home'
@@ -13,7 +13,7 @@ import GenMeeting from './Components/GenMeeting'
 
 function App() {
 
-  const [curArticle, setCurArticle] = useState(0);
+  
 
   return (
     <Routes>
