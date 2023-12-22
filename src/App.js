@@ -1,49 +1,31 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import React, { useState, useEffect } from "react";
-import { Link, Route, Routes } from "react-router-dom";
-import { nav } from "./appdata";
+import {Route, Routes } from "react-router-dom";
 
-
+import Home from './Components/Home'
+import Error from './Components/Error'
+import About from './Components/About'
+import SharedLayout from './Components/SharedLayout'
+import ComMembers from './Components/ComMembers'
+import FounDocum from './Components/FounDocum'
+import GenMeeting from './Components/GenMeeting'
 
 function App() {
 
   const [curArticle, setCurArticle] = useState(0);
 
   return (
-    <div className="App">
-      <header className="App-header">
-       
-      {nav.map((item) => {
-          return (
-            <Link
-              className={`navLink ${
-                item.id === curArticle ? "navBtn-active" : ""
-              }`}
-              key={item.id}
-              onClick={() => setCurArticle(item.id)}
-              to={item.route}
-            >
-              {item.name}
-            </Link>
-          );
-        })}
-
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="FounDocum" element={<FounDocum />} />
+          <Route path="GenMeeting" element={<GenMeeting />} />
+          <Route path="ComMembers" element={<ComMembers />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
   );
 }
 
