@@ -1,13 +1,32 @@
+
+:root {
+ 
+ --green-600: #309a99;
+ --primary-500: #645cff;
+}
+
 .navbar {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   gap: 1rem;
+  border: 1px solid #309a99 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.logo{
+  height: 100px;
+  width: 150px;
+  border: 2px solid red;
+ object-fit: c;
+
 }
 
 .link {
-  color: var(--grey-500);
+  color: var(--green-600);
 }
 
 .active {
