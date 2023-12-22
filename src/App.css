@@ -17,11 +17,12 @@
   align-items: center;
 
 }
+
 .logo{
   height: 100px;
   width: 150px;
   border: 2px solid red;
- object-fit: c;
+ object-fit: contain;
 
 }
 
