@@ -1,35 +1,95 @@
-
 :root {
- 
- --green-600: #309a99;
- --primary-500: #645cff;
+  --green-500: #5fc7c5;
+  --green-600: #309a99;
+  --green-100: #c8e2e2;
+
+  --primary-500: #645cff;
+}
+* {
+  box-sizing: border-box;
+  color: var(--green-100);
+}
+
+html {
+  /* height: 100vh; */
+}
+
+body {
+  /* height: 100%; */
+  /* width: 100%; */
+  /* background-color: rgb(210, 250, 237); */
+  /* border: #645cff 3px solid; */
+}
+.appCont {
+  max-width: 1024px;
+  min-height: 100vh;
+  width: 100vw;
+  display: inline-block;
+  height: 100%;
+  border: 4px gray solid;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .navbar {
-  width: 90vw;
-  max-width: var(--max-width);
-  margin: 0 auto;
   display: flex;
-  gap: 1rem;
-  border: 1px solid #309a99 ;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  background-color: var(--green-600);
+}
+.logoDiv {
+  width: 10rem;
+  padding: 5px;
+  height: 100%;
 
+  margin: 0 0.5rem 0 0.5rem;
+}
+.logo {
+  width: 100%;
 }
 
-.logo{
-  height: 100px;
-  width: 150px;
-  border: 2px solid red;
- object-fit: contain;
-
+.navLinks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
+.article {
+  border: 3px solid red;
+  flex: 1 1 auto;
+  background-color: white;
+}
+.footer {
+  /* border: 1px goldenrod solid; */
+  background-color: #309a99;
+}
+
+.link,
+.active 
+ {
+  margin:  0 0.25rem;
+ }
 .link {
-  color: var(--green-600);
+  color: var(--green-100);
 }
 
 .active {
   color: var(--primary-500);
+}
+
+@media screen and (min-width: 650px) {
+  .navLinks {
+    flex-direction: row;
+    flex: 1 1 auto;
+    justify-content: space-around;
+  }
+  .logoDiv {
+    width: 15rem;
+    }
+}
+@media screen and (min-width: 800px) {
+    .logoDiv {
+    width: 25rem;
+    }
 }

@@ -4,9 +4,16 @@ import Navbar from './Navbar';
 const SharedLayout = () => {
   return (
     <>
+    <div className='appCont'>
       <Navbar />
-      <Outlet />
-      
+      <div className='article'>
+        <Outlet />
+      </div>
+      <div className='footer'>
+        Footer
+      </div>
+    </div>
+            
     </>
   );
 };
