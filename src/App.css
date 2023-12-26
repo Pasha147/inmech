@@ -15,7 +15,6 @@ html {
 }
 
 body {
-  
   /* height: 100%; */
   /* width: 100%; */
   /* background-color: rgb(210, 250, 237); */
@@ -25,18 +24,25 @@ body {
   max-width: 1024px;
   min-height: 100vh;
   width: 100vw;
-  display: inline-block;
+  /* display: inline-block; */
   height: 100%;
-  border: 4px gray solid;
-  display: flex;
-  flex-direction: column;
+  /* border: 4px gray solid; */
+
   height: 100%;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.navbar {
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--green-600);
 }
@@ -50,28 +56,55 @@ body {
 .logo {
   width: 100%;
 }
+.burger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 20px;
+  /* background-color: #5fc7c5; */
+}
+.burger::after,
+.burger::before {
+  content: "";
+  background: white;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  top: 49%;
+}
 
 .navLinks {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
+  display: none;
+  
 }
 
 .article {
-  border: 3px solid red;
-  flex: 1 1 auto;
-  background-color: white;
+ flex: 1 1 auto;
+ padding-top: 3rem;
 }
+
 .footer {
   /* border: 1px goldenrod solid; */
   background-color: #309a99;
 }
 
 .link,
-.active 
- {
-  margin:  0 0.25rem;
- }
+.active {
+  margin: 0 0.25rem;
+}
 .link {
   color: var(--green-100);
 }
@@ -82,16 +115,27 @@ body {
 
 @media screen and (min-width: 650px) {
   .navLinks {
+    width: 50%;
+    display: flex;
     flex-direction: row;
     flex: 1 1 auto;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .logoDiv {
     width: 15rem;
-    }
+  }
+  .burger {
+    display: none;
+  }
+  .article {
+     padding-top: 4rem;
+   }
 }
 @media screen and (min-width: 800px) {
-    .logoDiv {
+  .logoDiv {
     width: 25rem;
-    }
+  }
+  .article {
+    padding-top: 6rem;
+  }
 }

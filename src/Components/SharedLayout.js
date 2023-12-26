@@ -1,11 +1,11 @@
 
 import {Outlet } from 'react-router-dom';
-import Navbar from './Navbar';
+import Header from './Header';
 const SharedLayout = () => {
   return (
     <>
     <div className='appCont'>
-      <Navbar />
+      <Header />
       <div className='article'>
         <Outlet />
       </div>

@@ -1,11 +1,15 @@
 import { NavLink } from "react-router-dom";
 
-const Navbar = () => {
+const Header = () => {
   return (
-    <nav className="navbar">
+    <header className="header">
       <div className="logoDiv">
         <img className="logo" src="./img/logo.png" alt="Logo"></img>
       </div>
+      <div className="burger">
+        <span></span>
+      </div>
+
       <div className="navLinks">
         <NavLink
           to="/"
@@ -42,7 +46,7 @@ const Navbar = () => {
           Члени комітету
         </NavLink>
       </div>
-    </nav>
+    </header>
   );
 };
-export default Navbar;
+export default Header;
