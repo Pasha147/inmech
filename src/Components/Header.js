@@ -6,7 +6,7 @@ const Header = () => {
 
   function hanndleClick(){
     burMenu ? setBurMenu(0) : setBurMenu(1)
-    console.log('burgerMenu = ', burMenu);
+    // console.log('burgerMenu = ', burMenu);
 
   }
 
@@ -23,7 +23,10 @@ const Header = () => {
                     >
             <span></span>
           </div>
-          <nav className={ burMenu ? "header__menu" : "header__menuOff"}>
+          <nav 
+          className={ burMenu ? "header__menu" : "header__menuOff"}
+          onClick={()=>hanndleClick()}
+          >
             <ul className="header__list">
               <li>
                 <div className="header__link">
@@ -32,6 +35,7 @@ const Header = () => {
                     className={({ isActive }) =>
                       isActive ? "link active" : "link"
                     }
+                    
                   >
                     Home
                   </NavLink>
@@ -44,6 +48,7 @@ const Header = () => {
                     className={({ isActive }) =>
                       isActive ? "link active" : "link"
                     }
+                    
                   >
                     Про комітет
                   </NavLink>
