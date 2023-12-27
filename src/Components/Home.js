@@ -2,37 +2,52 @@ const Home = () => {
   return (
     <section className="section">
       <div className="container">
-        <h2>Home Page Новини</h2>
-        <p>
-          adfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg adfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg
-        </p>
-        <p>
-          adfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg adfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg
-        </p>
-        <p>
-          adfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg adfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs
-          fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa
-          dfa dg sdffgs gf ggs fgadfasdf asdf adsf adfa dfa dg sdffgs gf ggs fg
-        </p>
+        <div className="article">
+          <h3>12 вересня 2023 рік. </h3>
+          <h2>Загальні збори.</h2>
+          <p>
+            12 вересня 2023 року відбулись Загальні збори членів Національного
+            комітету України з теоретичної і прикладної механіки. За відсутності
+            за станом здоров’я голови Комітету О.М. Гузя головуючим на засіданні
+            було обрано вченого секретаря Комітету Я.Я. Рущицького. Було
+            заслухано звіт голови Комітету, визнано роботу Комітету та його
+            голови задовільною та висловлена вдячність за видатний внесок у
+            становленні Комітету та забезпечення його ефективної роботи голові
+            Комітету. За підсумками відкритого голосування до Комітету було
+            включено 76 нових членів з 22-х освітніх, наукових та промислових
+            організацій України. Головою Комітету обрано В.Л. Богданова, його
+            заступниками – М.І. Бобиря, А.Ф. Булата, Я.О. Жука, Р.М. Кушніра і
+            В.М. Назаренка, вченим секретарем – М.Ф. Селіванова. Також було
+            затверджено склад Президії Комітету, в який також увійшли Г.О.
+            Воропаєв, О.М. Гузь, Л.М. Лобанов, З.Т. Назарчук, О.В. Пилипенко,
+            Я.Я. Рущицький, О.М. Тимоха, В.В. Харченко і О.М. Хіміч. Базовою
+            організацією Комітету залишився Інститут механіки ім. С.П. Тимошенка
+            НАН України.
+          </p>
+        </div>
+        <div className="article">
+          <h3>12 вересня 2023 рік. </h3>
+          <h2>Загальні збори.</h2>
+          <p>
+            12 вересня 2023 року відбулись Загальні збори членів Національного
+            комітету України з теоретичної і прикладної механіки. За відсутності
+            за станом здоров’я голови Комітету О.М. Гузя головуючим на засіданні
+            було обрано вченого секретаря Комітету Я.Я. Рущицького. Було
+            заслухано звіт голови Комітету, визнано роботу Комітету та його
+            голови задовільною та висловлена вдячність за видатний внесок у
+            становленні Комітету та забезпечення його ефективної роботи голові
+            Комітету. За підсумками відкритого голосування до Комітету було
+            включено 76 нових членів з 22-х освітніх, наукових та промислових
+            організацій України. Головою Комітету обрано В.Л. Богданова, його
+            заступниками – М.І. Бобиря, А.Ф. Булата, Я.О. Жука, Р.М. Кушніра і
+            В.М. Назаренка, вченим секретарем – М.Ф. Селіванова. Також було
+            затверджено склад Президії Комітету, в який також увійшли Г.О.
+            Воропаєв, О.М. Гузь, Л.М. Лобанов, З.Т. Назарчук, О.В. Пилипенко,
+            Я.Я. Рущицький, О.М. Тимоха, В.В. Харченко і О.М. Хіміч. Базовою
+            організацією Комітету залишився Інститут механіки ім. С.П. Тимошенка
+            НАН України.
+          </p>
+        </div>
       </div>
     </section>
   );
