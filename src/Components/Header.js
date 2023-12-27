@@ -3,48 +3,79 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="header">
-      <div className="logoDiv">
-        <img className="logo" src="./img/logo.png" alt="Logo"></img>
-      </div>
-      <div className="burger">
-        <span></span>
-      </div>
-
-      <div className="navLinks">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          Home
-        </NavLink>
-
-        <NavLink
-          to="/about"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          Про комітет
-        </NavLink>
-
-        <NavLink
-          to="/FounDocum"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          Установчі документи
-        </NavLink>
-
-        <NavLink
-          to="/GenMeeting"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          Загальні збори
-        </NavLink>
-
-        <NavLink
-          to="/ComMembers"
-          className={({ isActive }) => (isActive ? "link active" : "link")}
-        >
-          Члени комітету
-        </NavLink>
+      <div className="container">
+        <div className="header__body">
+          <a href="#.a" className="header__logo">
+            <img className="logo" src="./img/logo.png" alt="Logo"></img>
+          </a>
+          <div className="header__burger">
+            <span></span>
+          </div>
+          <nav className="header__menu">
+            <ul className="header__list">
+              <li>
+                <div className="header__link">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      isActive ? "link active" : "link"
+                    }
+                  >
+                    Home
+                  </NavLink>
+                </div>
+              </li>
+              <li>
+                <div className="header__link">
+                  <NavLink
+                    to="/about"
+                    className={({ isActive }) =>
+                      isActive ? "link active" : "link"
+                    }
+                  >
+                    Про комітет
+                  </NavLink>
+                </div>
+              </li>
+              <li>
+                <div className="header__link">
+                  <NavLink
+                    to="/FounDocum"
+                    className={({ isActive }) =>
+                      isActive ? "link active" : "link"
+                    }
+                  >
+                    Установчі документи
+                  </NavLink>
+                </div>
+              </li>
+              <li>
+                <div className="header__link">
+                  <NavLink
+                    to="/GenMeeting"
+                    className={({ isActive }) =>
+                      isActive ? "link active" : "link"
+                    }
+                  >
+                    Загальні збори
+                  </NavLink>
+                </div>
+              </li>
+              <li>
+                <div className="header__link">
+                  <NavLink
+                    to="/ComMembers"
+                    className={({ isActive }) =>
+                      isActive ? "link active" : "link"
+                    }
+                  >
+                    Члени комітету
+                  </NavLink>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
   );
