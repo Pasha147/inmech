@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [burMenu, setBurMenu] = useState(0);
+
+  function hanndleClick(){
+    burMenu ? setBurMenu(0) : setBurMenu(1)
+    console.log('burgerMenu = ', burMenu);
+
+  }
+
   return (
     <header className="header">
       <div className="container">
@@ -8,10 +17,13 @@ const Header = () => {
           <a href="#.a" className="header__logo">
             <img className="logo" src="./img/logo.png" alt="Logo"></img>
           </a>
-          <div className="header__burger">
+          <div 
+                    className="header__burger"
+                    onClick={()=>hanndleClick()}
+                    >
             <span></span>
           </div>
-          <nav className="header__menu">
+          <nav className={ burMenu ? "header__menu" : "header__menuOff"}>
             <ul className="header__list">
               <li>
                 <div className="header__link">

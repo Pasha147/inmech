@@ -189,7 +189,7 @@ body {
     top: 49%;
   }
 
-  .header__menu{
+  .header__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -198,11 +198,15 @@ body {
     background-color: var(--green-500);
     padding-top: 80px;
   }
-  .header__list{
+  .header__list {
     display: block;
   }
-  .header__list li{
+  .header__list li {
     margin-top: 20px;
+  }
+
+  .header__menuOff {
+    display: none;
   }
 }
 
