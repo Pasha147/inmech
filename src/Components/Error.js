@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 
 
-const Error = () => {
+export default function Error ()  {
   return (
     <section className='section'>
       <h2>404</h2>
@@ -11,4 +11,4 @@ const Error = () => {
     </section>
   );
 };
-export default Error;
+

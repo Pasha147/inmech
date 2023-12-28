@@ -18,13 +18,13 @@ const Header = () => {
             <img className="logo" src="./img/logo.png" alt="Logo"></img>
           </a>
           <div 
-                    className="header__burger"
+                    className={burMenu ? "header__burger header__burgerOff" :"header__burger"}
                     onClick={()=>hanndleClick()}
                     >
             <span></span>
           </div>
           <nav 
-          className={ burMenu ? "header__menu" : "header__menuOff"}
+          className={ burMenu ? "header__menu" : "header__menu header__menuOff"}
           onClick={()=>hanndleClick()}
           >
             <ul className="header__list">
