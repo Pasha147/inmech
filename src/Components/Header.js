@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <div className="header__body">
           <a href="#.a" className="header__logo">
-            <img className="logo" src="./img/logo.png" alt="Logo"></img>
+            <img className="logo" src="./img/logo5.png" alt="Logo"></img>
           </a>
           <div 
                     className={burMenu ? "header__burger header__burgerOff" :"header__burger"}

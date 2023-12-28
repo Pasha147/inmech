@@ -127,7 +127,14 @@ body {
 /* border-bottom: #645cff 2px solid; */
 border-radius: 0.5rem;
 box-shadow: 5px 5px 10px #1e2828b8;
-margin: 1rem auto;
+margin: 1rem 0.5rem;
+}
+.article li{
+  list-style: none;
+  margin: 1rem auto;
+}
+.spanBolt{
+  font-weight: bold;
 }
 
 
