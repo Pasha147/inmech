@@ -62,57 +62,35 @@ export const genmeet = [
   },
 ];
 
-
-
-//buttons in nav
-export const nav = [
-  { id: 0, 
-    name: "MAIN", 
-    artHeader: "Main", 
-    article: '', 
-    route: "/" },
+export const slider = [
   {
-    id: 1,
-    name: "SKILLS",
-    artHeader: "Skills",
-    article: '',
-    route: "/skills",
+    title: "Title1",
+    image: "./img/sldr/1.jpg",
+    text: "Text1",
   },
   {
-    id: 2,
-    name: "EDUCATION",
-    artHeader: "Education",
-    article: '',
-    route: "/education",
+    title: "Title2",
+    image: "./img/sldr/2.jpg",
+    text: "Text2 It's me",
   },
   {
-    id: 3,
-    name: "WORK EXPERIENCE",
-    artHeader: "Work Experience",
-    article: '',
-    route: "/workexp",
+    title: "Title3",
+    image: "./img/sldr/3.jpg",
+    text: "Text3",
   },
   {
-    id: 4,
-    name: "PROJECTS",
-    artHeader: "Projects",
-    article: '',
-    route: "/projects",
-  },
-
-  {
-    id: 5,
-    name: "ABOUT ME",
-    artHeader: "About me",
-    article: '',
-    route: "/aboutMe",
+    title: "Title4",
+    image: "./img/sldr/4.png",
+    text: "Text4",
   },
   {
-    id: 6,
-    name: "CONTACTS",
-    artHeader: "Contacts",
-    article: '',
-    route: "/contactsArt",
+    title: "Title5",
+    image: "./img/sldr/5.png",
+    text: "Text5",
   },
-];
-//==================================
+  {
+    title: "Title6",
+    image: "./img/sldr/6.jpg",
+    text: "Text6",
+  },
+]

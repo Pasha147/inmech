@@ -1,10 +1,23 @@
+import Slider from "./Slider";
+import {slider} from '../appdata'
+// import { useEffect } from "react";
+
 const Home = () => {
+/*
+  useEffect(()=>{
+     console.log(slider);
+  },[])
+  */
+
   return (
     <section className="section">
       {/* <div className="container"> */}
         <article className="article">
           <h3>12 вересня 2023 </h3>
           <h2>Загальні збори</h2>
+            <div className="sliderCont">
+<Slider slider={slider}/>
+            </div>
           <p>
             12 вересня 2023 року відбулись Загальні збори членів Національного
             комітету України з теоретичної і прикладної механіки. За відсутності

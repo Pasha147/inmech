@@ -136,7 +136,14 @@ margin: 1rem 0.5rem;
 .spanBolt{
   font-weight: bold;
 }
-
+.sliderCont {
+  width: 50%;
+  height: 32rem;
+  margin-bottom: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* // border: red 2px solid; */
+}
 
 
 .footer {
@@ -262,6 +269,11 @@ margin: 1rem 0.5rem;
 
   .section {
         padding-top: 3rem;
+  }
+  .sliderCont {
+    width: 100%;
+    
+    
   }
 }
 

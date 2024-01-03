@@ -25,6 +25,7 @@ function App() {
           <Route path="ComMembers" element={<ComMembers />} />
           <Route path="*" element={<Error />} />
         </Route>
+        <Route path="*" element={<Error />} />
       </Routes>
   );
 }
