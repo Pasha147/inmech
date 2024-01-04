@@ -20,6 +20,21 @@ body {
   height: 100%;
 }
 
+.appCont {
+  max-width: 1024px;
+  min-height: 100vh;
+  width: 100%;
+  /* display: inline-block; */
+  height: 100%;
+  /* border: 4px gray solid; */
+
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -78,21 +93,6 @@ body {
   padding: 0 10px;
 }
 
-.appCont {
-  max-width: 1024px;
-  min-height: 100vh;
-  width: 100vw;
-  /* display: inline-block; */
-  height: 100%;
-  /* border: 4px gray solid; */
-
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
 .logoDiv {
   width: 10rem;
   padding: 5px;
@@ -149,6 +149,8 @@ margin: 1rem 0.5rem;
 .footer {
   /* border: 1px goldenrod solid; */
   background-color: var(--header-5);
+  color: var(--green-100);
+  text-align: center;
 }
 
 .link,
