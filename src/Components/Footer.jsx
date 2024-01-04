@@ -6,7 +6,7 @@ export default function Futer() {
         вул. Нестерова, 3.
       </p>
 
-      <p>{`Email: inst_mech@inmech.kyiv.ua Тел: +380(63) 369-38-97`}</p>
+      <p>{`Email: natcommmech@nas.gov.ua Тел: +380(63) 369-38-97`}</p>
     </footer>
   );
 }
