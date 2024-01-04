@@ -7,8 +7,7 @@ const SharedLayout = () => {
       <div className="appCont">
         <Header />
         <Outlet />
-        <Futer/>
-        
+        <Futer />
       </div>
     </>
   );
