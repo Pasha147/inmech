@@ -18,6 +18,9 @@
   position: absolute;
   width: 98%;
   height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   /* border: yellow 2px solid; */
   opacity: 0%;
@@ -26,10 +29,14 @@
   h3 {
     padding-bottom: 0.25rem;
   }
+  p{
+    font-size: 0.85rem;
+  }
 }
 .slider__Img {
-  height: 88%;
-  object-fit: cover;
+  max-height: 80%;
+  width: 100%;
+  object-fit: contain;
 }
 .slider__buttonL,
 .slider__buttonR {

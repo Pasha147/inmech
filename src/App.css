@@ -137,8 +137,8 @@ margin: 1rem 0.5rem;
   font-weight: bold;
 }
 .sliderCont {
-  width: 50%;
-  height: 32rem;
+  width: 60%;
+  height: 35rem;
   margin-bottom: 0.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -274,7 +274,7 @@ margin: 1rem 0.5rem;
   }
   .sliderCont {
     width: 100%;
-    
+    height: 30rem;
     
   }
 }
