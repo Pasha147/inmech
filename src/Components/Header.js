@@ -37,7 +37,7 @@ const Header = () => {
                     }
                     
                   >
-                    Home
+                    Головна
                   </NavLink>
                 </div>
               </li>
