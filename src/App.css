@@ -44,7 +44,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: var(--green-600); */
+  background-color: var(--green-600);
   box-shadow: 5px 5px 10px #1e2828b8;
 }
 .header::before {
@@ -128,6 +128,12 @@ body {
 border-radius: 0.5rem;
 box-shadow: 5px 5px 10px #1e2828b8;
 margin: 1rem 0.5rem;
+}
+.articlImg{
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 0.5rem auto;
 }
 .article li{
   list-style: none;

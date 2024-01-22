@@ -4,10 +4,9 @@ import { useState } from "react";
 const Header = () => {
   const [burMenu, setBurMenu] = useState(0);
 
-  function hanndleClick(){
-    burMenu ? setBurMenu(0) : setBurMenu(1)
+  function hanndleClick() {
+    burMenu ? setBurMenu(0) : setBurMenu(1);
     // console.log('burgerMenu = ', burMenu);
-
   }
 
   return (
@@ -17,15 +16,19 @@ const Header = () => {
           <a href="#.a" className="header__logo">
             <img className="logo" src="./img/logo5.png" alt="Logo"></img>
           </a>
-          <div 
-                    className={burMenu ? "header__burger header__burgerOff" :"header__burger"}
-                    onClick={()=>hanndleClick()}
-                    >
+          <div
+            className={
+              burMenu ? "header__burger header__burgerOff" : "header__burger"
+            }
+            onClick={() => hanndleClick()}
+          >
             <span></span>
           </div>
-          <nav 
-          className={ burMenu ? "header__menu" : "header__menu header__menuOff"}
-          onClick={()=>hanndleClick()}
+          <nav
+            className={
+              burMenu ? "header__menu" : "header__menu header__menuOff"
+            }
+            onClick={() => hanndleClick()}
           >
             <ul className="header__list">
               <li>
@@ -35,7 +38,6 @@ const Header = () => {
                     className={({ isActive }) =>
                       isActive ? "link active" : "link"
                     }
-                    
                   >
                     Головна
                   </NavLink>
@@ -48,7 +50,6 @@ const Header = () => {
                     className={({ isActive }) =>
                       isActive ? "link active" : "link"
                     }
-                    
                   >
                     Про комітет
                   </NavLink>
