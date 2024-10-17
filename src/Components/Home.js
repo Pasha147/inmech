@@ -1,5 +1,8 @@
 import Slider from "./Slider";
 import { slider } from "../appdata";
+import News1 from "./News1";
+import News2 from "./News2";
+import News3 from "./News3";
 // import { useEffect } from "react";
 
 const Home = () => {
@@ -10,9 +13,12 @@ const Home = () => {
   */
 
   return (
+    
     <section className="section">
       {/* <div className="container"> */}
-     
+     <News1/>
+     <News2/>
+     <News3/>
       <article className="article">
         <h3>16 листопада 2023 </h3>
         <h2>Конференція «Актуальні проблеми механіки – 2023»</h2>
@@ -65,3 +71,4 @@ const Home = () => {
   );
 };
 export default Home;
+

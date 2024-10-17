@@ -1,0 +1,17 @@
+
+.olItem li{
+    margin-left: 2rem;
+    list-style: decimal;
+}
+.h3News1{
+margin-bottom: 2rem;
+}
+.ulItem{
+    list-style-position: inside;
+    
+    margin-left: 2rem;
+}
+.ulItem li{
+   list-style: disc;
+   margin: 0.25rem 2rem;
+}
